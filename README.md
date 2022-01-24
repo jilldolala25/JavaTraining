@@ -1,4 +1,4 @@
-# JavaTraining  -20220120 homework
+  =20220120 homework
 
 ==查詢筆電商品資訊，資料來源由notebook-Info.csv匯入==  
 

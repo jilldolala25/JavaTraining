@@ -1,16 +1,23 @@
 package tw.com.fcb.Notebook;
 
+import com.opencsv.exceptions.CsvException;
+
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
 public class NotebookServiceImpl implements NotebookService {
-
+	ReadProductFromcCSV readFromCSV = new ReadProductFromcCSV();
 	List<NoteBook> myNotebook = new ArrayList<>();
 
 	public NotebookServiceImpl(List<NoteBook> myNotebook) {
 		this.myNotebook = myNotebook;
 	}
+	public NotebookServiceImpl() throws IOException, CsvException {
+		ReadProductFromcCSV readFromCSV = new ReadProductFromcCSV();
+		myNotebook = readFromCSV.readProductFromSCV();
 
+	}
 
 	@Override
 	public String toString() {

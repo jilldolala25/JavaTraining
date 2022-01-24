@@ -27,7 +27,7 @@ public class ReadProductFromcCSV {
 			notebook.setColor(record[6]);
 			notebook.setPrice(Integer.parseInt(record[7]));
 			noteBooks.add(notebook);
-//			myNotebook.put(notebook.getProductNo(), notebook);
+
 		}
 
 		return noteBooks;

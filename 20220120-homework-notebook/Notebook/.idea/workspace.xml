@@ -30,7 +30,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit3" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit3" value="junit.framework.TestCase" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../spring boot demo" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
@@ -40,7 +40,7 @@
       <recent name="tw.com.fcb.Notebook" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.NotebookApp">
+  <component name="RunManager" selected="JUnit.NotebookServiceTest">
     <configuration name="NotebookApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="tw.com.fcb.Notebook.NotebookApp" />
       <module name="Notebook" />
@@ -103,8 +103,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.NotebookApp" />
         <item itemvalue="JUnit.NotebookServiceTest" />
+        <item itemvalue="Application.NotebookApp" />
         <item itemvalue="JUnit.NotebookServiceTest.testAllProduct" />
         <item itemvalue="JUnit.NotebookServiceTest.testGetByBrand" />
       </list>

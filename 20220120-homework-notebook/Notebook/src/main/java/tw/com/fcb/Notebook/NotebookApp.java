@@ -9,8 +9,7 @@ public class NotebookApp {
 	
 	public static void main(String[] args) throws IOException, CsvException {
 
-		ReadProductFromcCSV readFromCSV = new ReadProductFromcCSV();
-		NotebookServiceImpl noteBookSvc = new NotebookServiceImpl(readFromCSV.readProductFromSCV());
+		NotebookServiceImpl noteBookSvc = new NotebookServiceImpl();
 		noteBookSvc.getAllproduct();
 		List<NoteBook> result = null;
 

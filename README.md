@@ -1,4 +1,4 @@
-# JavaTraining
+# JavaTraining  20220120-
 
 查詢筆電商品資訊，資料來源由notebook-Info.csv匯入
 

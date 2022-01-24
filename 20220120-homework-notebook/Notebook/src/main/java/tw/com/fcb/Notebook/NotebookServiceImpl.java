@@ -1,20 +1,14 @@
 package tw.com.fcb.Notebook;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 public class NotebookServiceImpl implements NotebookService {
 
-	Map<String, NoteBook> myNotebook = new HashMap<String, NoteBook>();
+	List<NoteBook> myNotebook = new ArrayList<>();
 
-	public NotebookServiceImpl(Map<String, NoteBook> myNotebook) {
+	public NotebookServiceImpl(List<NoteBook> myNotebook) {
 		this.myNotebook = myNotebook;
-	}
-
-	public NotebookServiceImpl(NotebookServiceImpl noteBookSvc) {
-
 	}
 
 
@@ -26,24 +20,12 @@ public class NotebookServiceImpl implements NotebookService {
 
 
 
-	public void getAllProduct() {
-		for (String key : myNotebook.keySet()) {
-			NoteBook content = myNotebook.get(key);
-			System.out.println("data = " + content);
-
-		}
-//		System.out.println("myNotebook = " + myNotebook);
-	}
-
-
 
 	@Override
 	public List<NoteBook> getByBrand(String brand) {
 		List<NoteBook> brandResult = new ArrayList<NoteBook>();
-
-		for (String key : myNotebook.keySet()) {
-			NoteBook thisBrand = myNotebook.get(key);
-
+		for (int i = 0; i < myNotebook.size(); i++) {
+			NoteBook thisBrand = myNotebook.get(i);
 			int count = -1;
 			if (thisBrand.getBrand().equals(brand)) {
 				count ++;
@@ -61,13 +43,11 @@ public class NotebookServiceImpl implements NotebookService {
 	@Override
 	public List<NoteBook> getByCPU(String cpu) {
 		List<NoteBook> cpuResult = new ArrayList<NoteBook>();
-
-		for (String key : myNotebook.keySet()) {
-			NoteBook thisCPU = myNotebook.get(key);
-
+		for (int i = 0; i < myNotebook.size(); i++) {
+			NoteBook thisCPU = myNotebook.get(i);
 			int count = -1;
 			if (thisCPU.getCpu().equals(cpu)) {
-				count ++;
+				count++;
 				cpuResult.add(thisCPU);
 
 			} else {
@@ -82,9 +62,8 @@ public class NotebookServiceImpl implements NotebookService {
 	@Override
 	public List<NoteBook> getByColor(String color) {
 		List<NoteBook> colorResult = new ArrayList<NoteBook>();
-
-		for (String key:myNotebook.keySet()) {
-			NoteBook thisColor = myNotebook.get(key);
+		for (int i = 0; i < myNotebook.size() ; i++) {
+			NoteBook thisColor = myNotebook.get(i);
 			int count = -1;
 			if (thisColor.getColor().equals(color)) {
 				count ++;
@@ -95,15 +74,15 @@ public class NotebookServiceImpl implements NotebookService {
 					System.out.println("No Result Found !");
 				}
 			}
+
 		}
 		return colorResult;
 	}
 
 	public List<NoteBook> getByScreenSize(String screenSize) {
 		List<NoteBook> screenSizeResult = new ArrayList<NoteBook>();
-
-		for (String key:myNotebook.keySet()) {
-			NoteBook thisScreenSize = myNotebook.get(key);
+		for (int i = 0; i < myNotebook.size(); i++) {
+			NoteBook thisScreenSize = myNotebook.get(i);
 			int count = -1;
 			if (thisScreenSize.getScreenSize().equals(screenSize)) {
 				count ++;
@@ -115,15 +94,16 @@ public class NotebookServiceImpl implements NotebookService {
 				}
 			}
 		}
+
 		return screenSizeResult;
 	}
-
+//
 	@Override
-	public void getAllproduct() {
-		for (String key : myNotebook.keySet()) {
-			NoteBook content = myNotebook.get(key);
-			System.out.println("data1 = " + content);
-
+	public List<NoteBook> getAllproduct() {
+		for (int i = 0; i < myNotebook.size(); i++) {
+			NoteBook content = myNotebook.get(i);
+			System.out.println("data = " + content);
 		}
+		return  myNotebook;
 	}
 }

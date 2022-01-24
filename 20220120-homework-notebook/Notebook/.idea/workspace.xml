@@ -30,7 +30,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit3" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit3" value="junit.framework.TestCase" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../fcb-music-main" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
@@ -40,7 +40,7 @@
       <recent name="tw.com.fcb.Notebook" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.NotebookServiceTest.testGetByBrand">
+  <component name="RunManager" selected="Application.NotebookApp">
     <configuration name="NotebookApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="tw.com.fcb.Notebook.NotebookApp" />
       <module name="Notebook" />
@@ -50,6 +50,37 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NotebookServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Notebook" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tw.com.fcb.Notebook.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tw.com.fcb.Notebook" />
+      <option name="MAIN_CLASS_NAME" value="tw.com.fcb.Notebook.NotebookServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NotebookServiceTest.testAllProduct" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Notebook" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tw.com.fcb.Notebook.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tw.com.fcb.Notebook" />
+      <option name="MAIN_CLASS_NAME" value="tw.com.fcb.Notebook.NotebookServiceTest" />
+      <option name="METHOD_NAME" value="testAllProduct" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -72,8 +103,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.NotebookServiceTest.testGetByBrand" />
         <item itemvalue="Application.NotebookApp" />
+        <item itemvalue="JUnit.NotebookServiceTest" />
+        <item itemvalue="JUnit.NotebookServiceTest.testAllProduct" />
+        <item itemvalue="JUnit.NotebookServiceTest.testGetByBrand" />
       </list>
     </recent_temporary>
   </component>
@@ -87,16 +120,5 @@
       <updated>1642696762060</updated>
     </task>
     <servers />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/tw/com/fcb/Notebook/NotebookServiceTest.java</url>
-          <line>15</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

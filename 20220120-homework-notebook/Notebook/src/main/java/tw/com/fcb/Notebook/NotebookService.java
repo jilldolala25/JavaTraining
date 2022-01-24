@@ -13,5 +13,5 @@ public interface NotebookService {
 
 	public List<NoteBook> getByScreenSize(String screenSize);
 
-	public void getAllproduct();
+	public List<NoteBook> getAllproduct();
 }

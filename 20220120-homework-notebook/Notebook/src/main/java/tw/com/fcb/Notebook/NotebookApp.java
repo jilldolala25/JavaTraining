@@ -3,8 +3,6 @@ package tw.com.fcb.Notebook;
 
 import java.io.IOException;
 import java.util.*;
-
-import com.opencsv.CSVReader;
 import com.opencsv.exceptions.CsvException;
 
 public class NotebookApp {
@@ -13,7 +11,7 @@ public class NotebookApp {
 
 		ReadProductFromcCSV readFromCSV = new ReadProductFromcCSV();
 		NotebookServiceImpl noteBookSvc = new NotebookServiceImpl(readFromCSV.readProductFromSCV());
-		noteBookSvc.getAllProduct();
+		noteBookSvc.getAllproduct();
 		List<NoteBook> result = null;
 
 		boolean entrychoose = false;
@@ -22,6 +20,9 @@ public class NotebookApp {
 		var option = scanner.next().toString();
 		if (option.equals("1")|| option.equals("2") || option.equals("3") || option.equals("4")){
 			entrychoose = true;
+		}else{
+			System.out.println("輸入錯誤!");
+			entrychoose = false;
 		}
 		while(entrychoose)  {
 			switch (option){
@@ -61,7 +62,6 @@ public class NotebookApp {
 					result.forEach(System.out::println);
 					break;
 				default:
-					System.out.println("輸入錯誤!");
 					break;
 			}
 

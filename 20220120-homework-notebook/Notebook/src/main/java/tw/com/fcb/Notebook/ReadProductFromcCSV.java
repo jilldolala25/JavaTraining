@@ -8,7 +8,7 @@ import java.util.*;
 
 public class ReadProductFromcCSV {
 
-	public Map<String, NoteBook> readProductFromSCV() throws IOException, CsvException {
+	public List<NoteBook> readProductFromSCV() throws IOException, CsvException {
 		CSVReader reader = new CSVReader(new FileReader("notebook-Info.csv"));
 
 		List<NoteBook> noteBooks = new ArrayList<NoteBook>();
@@ -27,10 +27,10 @@ public class ReadProductFromcCSV {
 			notebook.setColor(record[6]);
 			notebook.setPrice(Integer.parseInt(record[7]));
 			noteBooks.add(notebook);
-			myNotebook.put(notebook.getProductNo(), notebook);
+//			myNotebook.put(notebook.getProductNo(), notebook);
 		}
 
-		return myNotebook;
+		return noteBooks;
 
 
 	}

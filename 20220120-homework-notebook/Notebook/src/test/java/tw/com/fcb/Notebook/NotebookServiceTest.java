@@ -8,8 +8,8 @@ import java.util.List;
 import java.util.Map;
 
 public class NotebookServiceTest extends TestCase {
-    ReadProductFromcCSV readFromCSV = new ReadProductFromcCSV();
-    NotebookServiceImpl noteBookSvc = new NotebookServiceImpl(readFromCSV.readProductFromSCV());
+
+    NotebookServiceImpl noteBookSvc = new NotebookServiceImpl();
 
     public NotebookServiceTest() throws IOException, CsvException {
     }
